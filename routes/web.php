@@ -11,9 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-});
-
-Route::get('/parser', 'ParserController@index');
-Route::get('/testparser', 'ParserController@testIndex');
-Route::get('/offices', 'ParserController@offices');
+Route::get('/', 'ParserController@index');
+Route::post('/parse', 'ParserController@generateGeolocation')->name('post.parse.excel');

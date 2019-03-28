@@ -24,10 +24,13 @@ class GenerateGeolocation extends FormRequest
     public function rules()
     {
         return [
-            'address_col' => 'required|string',
-            'lat_output_col' => 'required|string',
-            'long_output_col' => 'required|string',
-            'row_start_index' => 'required|numeric',
+            'address_col'       => 'required|string',
+            'lat_output_col'    => 'required|string',
+            'long_output_col'   => 'required|string',
+            'row_start_index'   => 'required|numeric',
+            'api_key'           => 'required|string',
+            'output_filename'   => 'required|string',
+            'file'              => 'required|file',
         ];
     }
 }
