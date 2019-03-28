@@ -11,9 +11,9 @@
 |
 */
 
-use GeoIp2\Database\Reader;
-
 Route::get('/', function () {
 });
 
 Route::get('/parser', 'ParserController@index');
+Route::get('/testparser', 'ParserController@testIndex');
+Route::get('/offices', 'ParserController@offices');
